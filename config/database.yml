@@ -3,13 +3,12 @@ default: &default
   encoding: unicode
   host: ec2-54-217-228-25.eu-west-1.compute.amazonaws.com
   pool: 5
-  database: da4it8h239pdq1
   username: zqyldtsghxvvcc
   password: 7edb646c23ebc95a28cfcec9907e67aa38598da3dd901800a6deb57daa6793a3
 
 development: &development
   <<: *default
-  database: consul_development
+  database: da4it8h239pdq1
 
 # The staging, preproduction and production dbs are only needed
 # for running rake assets:precompile locally before deploying
